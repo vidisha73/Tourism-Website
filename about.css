@@ -1,0 +1,330 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Image */
+.header-image {
+  position: absolute; /* Fixes the image to the top of the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  z-index: -1; /* Places the image behind the header */
+}
+section {
+  margin: 20px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.h2 {
+  font-size: 20px;
+}
+
+.h3 {
+  margin: 0 0 5px;
+}
+/* Header */
+header {
+  background:#f2eeee; /* No background color or image */
+  color: #0d0d0d; /* Text color */
+  padding: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Keeps header at the top while scrolling */
+  width: 100%;
+  top: 0; /* Aligns with the top of the viewport */
+  z-index: 10; /* Ensure it stays above the header image */
+}
+
+/* Logo Styling */
+header .logo {
+  font-size: 2.5rem; /* Large font size for the logo */
+  font-family: Arial, sans-serif; /* Cursive font from Google Fonts *
+  font-weight: bold; /* Make the font bold */
+  color: #090909; /* Adjust the logo color */
+  letter-spacing: 1px; /* Add letter spacing for elegance */
+  border-radius: 10px; /* Rounded corners for the border */
+  padding: 0.5rem 1rem; /* Padding inside the border */
+  display: inline-block; /* Makes sure the border fits closely around the text */
+}
+
+
+/* Optional: Add hover effect */
+header .logo:hover {
+color: #080806; /* Change color on hover */
+}
+
+/* Navigation Bar */
+nav ul {
+list-style: none;
+display: flex;
+justify-content: space-around;
+padding: 0;
+margin: 0;
+}
+
+nav ul li {
+font-size: 1rem;
+margin: 0 10px;
+position: relative; /* For bubble background effect */
+}
+
+nav ul li a {
+color: #0d0d0d; /* Adjust the color based on background */
+text-decoration: none;
+padding: 10px 20px; /* Add padding for the bubble effect */
+background: rgba(255, 255, 255, 0.2); /* Transparent bubble background */
+border-radius: 50px; /* Rounded corners to create the bubble effect */
+transition: background 0.3s ease, color 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow to enhance the bubble effect */
+border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add a soft border */
+}
+
+/* Hover effect for the links */
+nav ul li a:hover {
+background: rgba(255, 255, 255, 0.5); /* Lightens the bubble background on hover */
+color: #ff5722; /* Changes the text color on hover */
+}
+
+/* Make the links more touchable (for mobile) */
+nav ul li a:active {
+background: rgba(255, 255, 255, 0.7); /* Changes the bubble background when clicked */
+}
+
+/* Optional: Shadow for Header */
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
+}
+
+  /* Main Section */
+  main {
+    padding: 20px;
+  }
+  
+  /* Who We Are Section */
+  .who-we-are {
+    margin-bottom: 40px;
+  }
+  
+  .who-we-are h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .who-we-are p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  /* Our Team Section */
+  .our-team {
+    margin-bottom: 40px;
+  }
+  
+  .our-team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .team-member {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Our Partners Section */
+  .our-partners {
+    margin-bottom: 40px;
+  }
+  
+  .our-partners h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .our-partners p {
+    font-size: 18px;
+  }
+  
+  .partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .partners-list li {
+    font-size: 16px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Mentions Section */
+  .media-mentions {
+    margin-bottom: 40px;
+  }
+  
+  .media-mentions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .media-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .media-list li {
+    font-size: 16px;
+  }
+  
+  .media-list li a {
+    color: #090808;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .media-list li a:hover {
+    color: #e65b2a;
+  }
+  
+ /* Social Media Links */
+/*-- footer --*/
+.social-bnr-agileits {
+  float: center;
+  margin-right: 1rem;
+}
+
+/*--social-icons--*/
+.social-icons3 {
+    display: block;
+    padding: 1rem;
+    margin-top: .55em;
+  }
+  
+  .social-icons3  {
+    display: inline-block;
+  }
+  
+  .social-icons3  a {
+    display:inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1); /* Gray background */
+    border-radius: 50%; /* Circular shape */
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+/* Facebook */
+.social-icons3  a.facebook {
+  background-color: #3b5998;
+}
+
+.social-icons3  a.twitter {
+  background-color: #00acee;
+}
+
+.social-icons3  a.instagram {
+  background-color: #e4405f;
+}
+
+.social-icons3  a.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icons3  a:hover {
+  opacity: 0.8;
+}
+
+/* Social icon colors */
+.social-icons3  a i {
+  color: white;
+}
+
+/* Footer */
+footer {
+    background: #f1f2f5;
+    color: rgb(5, 4, 4);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Footer Links (Privacy Policy, Terms, Contact Us) */
+footer a {
+    color: rgb(16, 15, 15); /* Make the links white */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /*Adds spacing between links*/
+    font-size: 1.5rem; /* Adjust font size if needed */
+}
+
+/* Hover effect for footer links */
+footer a:hover {
+    color: rgb(8, 8, 8); /* Changes the link color to gray on hover */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer form input {
+    padding: 0.5rem;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+footer form button {
+    padding: 0.5rem 1rem;
+    background: #ff6b35;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}

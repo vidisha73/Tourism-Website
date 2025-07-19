@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Tour</title>
+    <link rel="stylesheet" href="explore.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo"><b>Adventure Places</b></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jammu.html">Explore Jammu</a></li>
+                <li><a href="kashmir.html">Explore Kashmir</a></li>
+                <li><a href="blogs.html">Blogs/Articles</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="book.html">Book Now</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- List of Destinations -->
+    <section class="Destination-photos">
+        <h1><u>Top Destination</u></h1>
+        <div class="photo-grid">
+            <div class="photo">
+                <img src="adventure/fishing and angling.jpg" alt="Fishing">
+                <p>Fishing</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/horse riding.jpg" alt="Horse Riding">
+                <p>Horse Riding</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/jeep safari tour.jpg" alt="Jeep Safari Tour">
+                <p>Jeep Safari Tour</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/mountain biking.jpg" alt="Mountain Biking">
+                <p>Mountain Biking</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/mountaineering.jpg" alt="Mountaneering">
+                <p>Mountaneering</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/paragliding.jpg" alt="Para Gliding">
+                <p>Para Gliding</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/river rafting.jpg" alt="River Rafting">
+
+                <p> River Rafting</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/rock climbing.jpg" alt="Rock Climbing">
+
+                <p>Rock Climbing</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/skiing.jpg" alt="Skiing">
+                <p>Skiing</p>
+            </div>
+
+            <div class="photo">
+                <img src="adventure/track abd hiking.jpg" alt="Track and Hiking">
+                <p>Track and Hiking</p>
+            </div>
+
+        </div>
+        <h1>For more adventure related details <a href="adv.html">click</a> here</h1>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Use</a>
+                <a>Contact Us </a> |
+                <a>+91 1234 5678 88</a>
+            </div>
+
+            <!-- Other footer content -->
+            <div class="social-icons3">
+                <a href="https://facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                </ul>
+            </div>
+
+            <form>
+                <input type="email" placeholder="Subscribe for Newsletter">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "6ee1c97b-9eb1-4ed6-a102-ba04d28aea9b", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "cead8fdf-261f-4bd3-bb97-03e838f0b657", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+</body>
+
+</html>
